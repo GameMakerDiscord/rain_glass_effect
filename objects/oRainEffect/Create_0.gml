@@ -15,17 +15,11 @@ surfH = surface_get_height(application_surface);
 surf = surface_create(surfW, surfH);
 rainSurf = surface_create(surfW, surfH);
 
-//Particles
-//partSys = part_system_create();
-//part_system_automatic_draw(partSys, 0);
+buff = buffer_create(surfW*surfH*4, buffer_fixed, 1);
+buffer_get_surface(buff, surf, 0, 0, 0);
+buffCooldown = 0;
 
-////Droplet
-//partDrop = part_type_create();
-//part_type_sprite(partDrop, sREDroplet, 0, 0, 0);
-//part_type_speed(partDrop, 3, 4, 0, 0);
-//part_type_direction(partDrop, -90, -90, 0, -20);
-
-//Particle list
+//Particle lists
 partList = ds_list_create();
 rainList = ds_list_create();
 

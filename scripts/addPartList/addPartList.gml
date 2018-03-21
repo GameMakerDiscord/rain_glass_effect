@@ -1,5 +1,5 @@
 /// @function addPartList
-/// @description Description of the function.
+/// @description Adds droplet to list
 /// @arg spr
 /// @arg sub
 /// @arg x

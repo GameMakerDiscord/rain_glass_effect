@@ -6,9 +6,6 @@ if (!irandom(1/chance)){
 	var xx = irandom(surfW);
 	var yy = irandom(surfH) - surfH/4;
 	
-	//part_particles_create(partSys, xx, yy, partDrop, 1);
-	//addPartList(sREDroplet, 0, xx, yy, 0, 0, random_range(1, 4), -90, 0);
-	
 	var xxx = xx + lengthdir_x(surfW, rainDir-180);
 	var yyy = yy + lengthdir_y(surfW, rainDir-180);
 	var dir = point_direction(xxx, yyy, xx, yy);
@@ -58,7 +55,6 @@ for(var i=0; i<ds_list_size(rainList); i++){
 	//Speed
 	arr[@ pr.x] += lengthdir_x(arr[pr.spd], arr[pr.dir]);
 	arr[@ pr.y] += lengthdir_y(arr[pr.spd], arr[pr.dir]);
-	
 	
 	//End
 	if (point_distance(arr[pr.x], arr[pr.y], arr[pr.xtar], arr[pr.ytar])<=arr[pr.spd]){
