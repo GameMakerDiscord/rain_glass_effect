@@ -5,4 +5,6 @@ A rain on glass pane effect for GameMaker Studio 2
 
 The droplets are white circles drawn on a surface that is never cleared. A shader is applied to that surface to make it look like water.
 
+![https://i.imgur.com/yq2OGWF.png](Scrshot)
+
 ## [GIF](https://imgur.com/a/UorLn)
